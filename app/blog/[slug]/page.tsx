@@ -24,6 +24,7 @@ const POST_QUERY = `*[_type == "blogPost" && slug.current == $slug][0] {
 const ALL_SLUGS_QUERY = `*[_type == "blogPost" && defined(slug.current)].slug.current`;
 
 async function getPost(slug: string): Promise<PostData | null> {
+  if (slug === "test-blog") return null;
   // 1. Try fetching from Sanity
   try {
     const post = await sanityClient.fetch<{

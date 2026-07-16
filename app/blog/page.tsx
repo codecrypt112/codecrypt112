@@ -16,7 +16,7 @@ interface SanityPost {
 async function getPosts(): Promise<BlogPost[]> {
   try {
     const posts = await sanityClient.fetch<SanityPost[]>(
-      `*[_type == "blogPost"] | order(publishedAt desc) {
+      `*[_type == "blogPost" && slug.current != "test-blog"] | order(publishedAt desc) {
         title,
         slug,
         "publishedAt": publishedAt,
@@ -25,8 +25,9 @@ async function getPosts(): Promise<BlogPost[]> {
         coverImage
       }`
     );
+    const sanityPosts: BlogPost[] = [];
     if (posts && posts.length > 0) {
-      return posts.map((p) => {
+      posts.forEach((p) => {
         let imageUrl: string | null = null;
         if (p.coverImage) {
           try {
@@ -35,7 +36,7 @@ async function getPosts(): Promise<BlogPost[]> {
             // ignore
           }
         }
-        return {
+        sanityPosts.push({
           slug: p.slug.current,
           title: p.title,
           date: p.publishedAt ? p.publishedAt.slice(0, 10) : "",
@@ -44,11 +45,19 @@ async function getPosts(): Promise<BlogPost[]> {
           readTime: "5 min read",
           content: "",
           coverImage: imageUrl,
-        };
+        });
       });
     }
+    const allPosts = [...LOCAL_POSTS, ...sanityPosts];
+    const seen = new Set();
+    const uniquePosts = allPosts.filter((post) => {
+      const duplicate = seen.has(post.slug);
+      seen.add(post.slug);
+      return !duplicate;
+    });
+    return uniquePosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   } catch (e) {
-    // Silent fallback to local posts
+    // Fallback to local posts
   }
   return LOCAL_POSTS;
 }
