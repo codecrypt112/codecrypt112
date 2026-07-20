@@ -104,5 +104,120 @@ export const LOCAL_POSTS: BlogPost[] = [
 <p>Or maybe...</p>
 <p>that's just who I am.</p>
 <p><em>This is the first post in what I hope becomes a series about building things, chasing impossible ideas, making mistakes, and trying to make sense of a life that's somehow split between classrooms, research labs, production servers, and startup dreams.</em></p>`
+  },
+  {
+    slug: "the-real-resume",
+    title: "Points We Can't Write — The Real Resume",
+    date: "2026-07-20",
+    tags: ["Personal"],
+    summary: "A raw look behind the polished bullet points of my resume. Exploring the friction of formal education, the projects that failed, and the personal cost of pursuing early growth.",
+    readTime: "6 min read",
+    coverImage: null,
+    content: `<p>Every few months, I update my resume.</p>
+<p>I rewrite a few bullet points.</p>
+<p>Change the order of projects.</p>
+<p>Add a new role.</p>
+<p>Remove an old one.</p>
+<p>Maybe tweak a sentence until it sounds a little more impressive.</p>
+<p>Eventually, I export it as a PDF and think, <em>"Yeah... this looks good."</em></p>
+<p>Then I close it.</p>
+<p>Because the moment I do, I remember how little of the story actually made it onto those pages.</p>
+<p>Resumes are strange things.</p>
+<p>They capture outcomes.</p>
+<p>Never the journey.</p>
+<p>They'll tell you I worked as a research scientist.</p>
+<p>They won't tell you about the nights I sat staring at research papers that felt impossible to understand. The ones I read over and over until a single paragraph finally started to make sense.</p>
+<p>They'll tell you I built projects.</p>
+<p>They won't tell you how many never made it past the prototype stage. Or how often I deleted weeks of work because I realized I had solved the wrong problem.</p>
+<p>They'll tell you I studied engineering.</p>
+<p>They won't tell you what it felt like to sit through classes while the technology I cared about was changing faster than the syllabus ever could.</p>
+<p>That's the strange thing about resumes.</p>
+<p>The most important parts never fit inside them.</p>
+<hr class="my-8 border-border" />
+<p>A few years ago, I was a diploma student in Coimbatore.</p>
+<p>I didn't have a grand plan.</p>
+<p>I just liked building things.</p>
+<p>One project led to another.</p>
+<p>Curiosity turned into habit.</p>
+<p>Habit slowly became obsession.</p>
+<p>Somewhere along the way, I found myself working on AI research while I was still trying to finish college.</p>
+<p>Looking back, I don't think there was one big turning point.</p>
+<p>It was thousands of small decisions.</p>
+<p>Opening one more paper.</p>
+<p>Trying one more experiment.</p>
+<p>Breaking one more project.</p>
+<p>Starting over.</p>
+<p>Again.</p>
+<p>And again.</p>
+<hr class="my-8 border-border" />
+<p>People often imagine learning as a straight line.</p>
+<p>Mine never looked like that.</p>
+<p>It looked like confusion.</p>
+<p>Like reading the same paper five times and understanding a different sentence each time.</p>
+<p>Like realizing that learning AI wasn't just about Python.</p>
+<p>It was mathematics.</p>
+<p>Statistics.</p>
+<p>Computer architecture.</p>
+<p>Distributed systems.</p>
+<p>Optimization.</p>
+<p>And, more than anything else, learning how to be comfortable saying,</p>
+<p><em>"I don't know yet."</em></p>
+<p>That word <em>yet</em> turned out to matter more than I expected.</p>
+<hr class="my-8 border-border" />
+<p>College, meanwhile, kept moving at its own pace.</p>
+<p>Attendance.</p>
+<p>Assignments.</p>
+<p>Exams.</p>
+<p>Marks.</p>
+<p>Outside the classroom, everything moved differently.</p>
+<p>Research didn't care about attendance.</p>
+<p>Production systems didn't care about semester breaks.</p>
+<p>Users didn't wait because it was exam week.</p>
+<p>Living in both worlds at once often felt like switching between two different realities.</p>
+<p>One rewarded having the right answers.</p>
+<p>The other rewarded asking better questions.</p>
+<hr class="my-8 border-border" />
+<p>There are projects nobody will ever see.</p>
+<p>Ideas that lasted a weekend.</p>
+<p>Experiments that failed before they even began.</p>
+<p>Entire weeks spent chasing problems that turned out not to be worth solving.</p>
+<p>For a long time, I thought those were wasted efforts.</p>
+<p>I don't anymore.</p>
+<p>Every failed experiment quietly changed the way I approached the next one.</p>
+<p>Not every project has to survive to be valuable.</p>
+<p>Sometimes its only job is to teach you why the next version should exist.</p>
+<hr class="my-8 border-border" />
+<p>The biggest things I've learned never came with certificates.</p>
+<p>They came from frustration.</p>
+<p>From rebuilding something after breaking it.</p>
+<p>From admitting I didn't understand.</p>
+<p>From asking for help.</p>
+<p>From trying again anyway.</p>
+<p>Those lessons don't belong on a resume.</p>
+<p>They're difficult to measure.</p>
+<p>But they're the reason the bullet points exist in the first place.</p>
+<hr class="my-8 border-border" />
+<p>There's another part we rarely talk about.</p>
+<p>The cost.</p>
+<p>Somewhere between projects, research, classes, and deadlines, I stopped noticing weekends.</p>
+<p>Friends slowly stopped asking because I was usually busy.</p>
+<p>The laptop became a permanent fixture beside me.</p>
+<p>I don't think anyone consciously chooses that life.</p>
+<p>It just happens one late night at a time.</p>
+<p>One deadline.</p>
+<p>One idea.</p>
+<p>One more thing you tell yourself you'll finish before going to bed.</p>
+<hr class="my-8 border-border" />
+<p>I still update my resume.</p>
+<p>I probably always will.</p>
+<p>It's useful.</p>
+<p>Necessary, even.</p>
+<p>But I've stopped believing it's the best summary of who someone is.</p>
+<p>The real resume is written in the things no recruiter will ever read.</p>
+<p>The questions you kept asking when nobody expected you to.</p>
+<p>The failures that quietly changed the way you think.</p>
+<p>The curiosity that refused to leave you alone.</p>
+<p>Those things don't fit into bullet points.</p>
+<p>Maybe they were never supposed to.</p>`
   }
 ];
