@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 import { sanityClient } from "@/lib/sanity";
 import BlogSidebar from "@/components/blog/BlogSidebar";
+import { LOCAL_DEVLOGS } from "@/lib/devlogs";
+import MathRenderer from "@/components/blog/MathRenderer";
 
 interface SanityDevlog {
   timestamp: string;
@@ -9,13 +11,20 @@ interface SanityDevlog {
 }
 
 async function getDevlogs(): Promise<SanityDevlog[]> {
+  let sanityLogs: SanityDevlog[] = [];
   try {
-    return await sanityClient.fetch<SanityDevlog[]>(
+    sanityLogs = await sanityClient.fetch<SanityDevlog[]>(
       `*[_type == "devlog"] | order(timestamp desc)`
     );
   } catch (e) {
-    return [];
+    // Fail silently
   }
+
+  // Merge local devlogs and sanity devlogs, then sort by timestamp descending
+  const allLogs = [...sanityLogs, ...LOCAL_DEVLOGS];
+  return allLogs.sort(
+    (a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+  );
 }
 
 export default async function DevlogPage() {
@@ -66,9 +75,10 @@ export default async function DevlogPage() {
                     </span>
                   </div>
 
-                  <p className="text-sm text-text-secondary leading-relaxed bg-surface/50 border border-border p-4 rounded-xl">
-                    {log.content}
-                  </p>
+                  <div
+                    className="text-sm text-text-secondary leading-relaxed bg-surface/50 border border-border p-4 rounded-xl prose prose-invert max-w-none"
+                    dangerouslySetInnerHTML={{ __html: log.content }}
+                  />
                 </div>
               );
             })}
@@ -81,6 +91,7 @@ export default async function DevlogPage() {
           <BlogSidebar />
         </Suspense>
       </aside>
+      <MathRenderer />
     </div>
   );
 }
