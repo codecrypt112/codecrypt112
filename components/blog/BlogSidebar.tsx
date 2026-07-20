@@ -40,67 +40,62 @@ export default function BlogSidebar() {
   }, []);
 
   return (
-    <aside className="blog-sidebar space-y-8">
-      <div className="sidebar-widget p-6 rounded-2xl bg-surface border border-border">
-        <h3 className="sidebar-widget-title text-sm font-mono font-semibold text-text-primary border-b border-border pb-3 mb-4 flex items-center justify-between">
-          <span>{"// ABOUT"}</span>
-          <span className="text-xs text-text-muted">01</span>
+    <aside className="blog-sidebar space-y-6">
+      {/* About Widget */}
+      <div className="sidebar-widget p-6 rounded-2xl bg-surface/30 backdrop-blur-md border border-border/80 hover:border-border transition-colors duration-300">
+        <h3 className="sidebar-widget-title text-xs font-mono font-bold text-text-primary border-b border-border/60 pb-3 mb-4 flex items-center justify-between">
+          <span className="tracking-wider">{"// AUTHOR"}</span>
+          <span className="text-[10px] text-accent font-semibold tracking-widest">01</span>
         </h3>
-        <p className="sidebar-about-text text-sm text-text-secondary leading-relaxed">
-          I am Vikash. Welcome to my corner of the internet. I write about
-          engineering, security research, malware analysis, and constant-time cryptography.
-        </p>
+        <div className="space-y-3">
+          <p className="sidebar-about-text text-xs text-text-secondary leading-relaxed">
+            I am Vikash, an Applied Research Scientist specializing in ML infrastructure, optimization, and secure systems design.
+          </p>
+          <p className="sidebar-about-text text-xs text-text-muted leading-relaxed">
+            Here I share deep dives, research notes, and reflections on code, security, and compiling imagination.
+          </p>
+        </div>
       </div>
 
-      <div className="sidebar-widget p-6 rounded-2xl bg-surface border border-border">
-        <h3 className="sidebar-widget-title text-sm font-mono font-semibold text-text-primary border-b border-border pb-3 mb-4 flex items-center justify-between">
-          <span>{"// STATS"}</span>
-          <span className="text-xs text-text-muted">02</span>
+      {/* Stats Widget */}
+      <div className="sidebar-widget p-6 rounded-2xl bg-surface/30 backdrop-blur-md border border-border/80 hover:border-border transition-colors duration-300">
+        <h3 className="sidebar-widget-title text-xs font-mono font-bold text-text-primary border-b border-border/60 pb-3 mb-4 flex items-center justify-between">
+          <span className="tracking-wider">{"// STATS"}</span>
+          <span className="text-[10px] text-accent font-semibold tracking-widest">02</span>
         </h3>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="p-3 rounded-xl bg-surface-2 border border-border text-center">
-            <span className="block text-2xl font-semibold text-accent font-mono">{postCount}</span>
-            <span className="text-[10px] uppercase font-mono text-text-muted">Posts</span>
+        <div className="grid grid-cols-2 gap-3">
+          <div className="p-4 rounded-xl bg-surface-2/30 border border-border/60 text-center hover:border-accent/20 transition-colors">
+            <span className="block text-2xl font-bold text-accent font-mono tracking-tight">{postCount}</span>
+            <span className="text-[9px] uppercase font-mono text-text-muted tracking-wider">Articles</span>
           </div>
-          <div className="p-3 rounded-xl bg-surface-2 border border-border text-center">
-            <span className="block text-2xl font-semibold text-accent font-mono">{categories.length}</span>
-            <span className="text-[10px] uppercase font-mono text-text-muted">Tags</span>
+          <div className="p-4 rounded-xl bg-surface-2/30 border border-border/60 text-center hover:border-accent/20 transition-colors">
+            <span className="block text-2xl font-bold text-accent font-mono tracking-tight">{categories.length}</span>
+            <span className="text-[9px] uppercase font-mono text-text-muted tracking-wider">Tags</span>
           </div>
         </div>
       </div>
 
-      <div className="sidebar-widget p-6 rounded-2xl bg-surface border border-border">
-        <h3 className="sidebar-widget-title text-sm font-mono font-semibold text-text-primary border-b border-border pb-3 mb-4 flex items-center justify-between">
-          <span>{"// CATEGORIES"}</span>
-          <span className="text-xs text-text-muted">03</span>
+      {/* Quick Links / Resources */}
+      <div className="sidebar-widget p-6 rounded-2xl bg-surface/30 backdrop-blur-md border border-border/80 hover:border-border transition-colors duration-300">
+        <h3 className="sidebar-widget-title text-xs font-mono font-bold text-text-primary border-b border-border/60 pb-3 mb-4 flex items-center justify-between">
+          <span className="tracking-wider">{"// INDEX"}</span>
+          <span className="text-[10px] text-accent font-semibold tracking-widest">03</span>
         </h3>
-        <div className="flex flex-wrap gap-2">
-          <Link
-            href="/blog"
-            className={`px-3 py-1.5 rounded-lg border text-xs font-mono transition-all duration-200 ${
-              activeCat === "All"
-                ? "bg-accent/10 border-accent text-accent shadow-[0_0_8px_rgba(16,185,129,0.1)]"
-                : "bg-surface-2 border-border text-text-muted hover:text-text-secondary hover:border-border-hover"
-            }`}
-          >
-            All
-          </Link>
-          {categories.map((cat) => (
-            <Link
-              key={cat}
-              href={`/blog?category=${encodeURIComponent(cat)}`}
-              className={`px-3 py-1.5 rounded-lg border text-xs font-mono transition-all duration-200 ${
-                activeCat === cat
-                  ? "bg-accent/10 border-accent text-accent shadow-[0_0_8px_rgba(16,185,129,0.1)]"
-                  : "bg-surface-2 border-border text-text-muted hover:text-text-secondary hover:border-border-hover"
-              }`}
-            >
-              {cat}
+        <ul className="space-y-2 text-xs font-mono">
+          <li>
+            <Link href="/blog/log" className="flex items-center justify-between text-text-muted hover:text-text-primary transition-colors py-1">
+              <span>stream.devlog</span>
+              <span className="text-accent">➔</span>
             </Link>
-          ))}
-        </div>
+          </li>
+          <li>
+            <Link href="/blog/goals" className="flex items-center justify-between text-text-muted hover:text-text-primary transition-colors py-1">
+              <span>milestones.json</span>
+              <span className="text-accent">➔</span>
+            </Link>
+          </li>
+        </ul>
       </div>
     </aside>
   );
 }
-
