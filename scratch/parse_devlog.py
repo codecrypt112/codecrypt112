@@ -128,6 +128,9 @@ if in_list:
 
 full_html = "\n".join(html_blocks)
 
+# Escape backslashes for TS template literals
+full_html_escaped = full_html.replace("\\", "\\\\")
+
 # Format the final typescript content
 ts_content = f"""export interface Devlog {{
   timestamp: string;
@@ -139,7 +142,7 @@ export const LOCAL_DEVLOGS: Devlog[] = [
   {{
     timestamp: "{timestamp}",
     type: "{log_type}",
-    content: `{full_html}`
+    content: `{full_html_escaped}`
   }}
 ];
 """
