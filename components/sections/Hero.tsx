@@ -73,7 +73,7 @@ export default function Hero() {
 
       <div className="w-full max-w-[1200px] mx-auto">
         <p className="hero-label section-label mb-6">
-          Applied Research Scientist / Full-Stack Engineer
+          Applied Research Scientist — ML Infra & Systems
         </p>
 
         <h1 className="hero-name heading-xl text-[clamp(2.5rem,8vw,5.5rem)] mb-6">
@@ -82,9 +82,10 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline body-text text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
-          I build dependable software for the web, mobile, and embedded systems
-          &mdash; then poke at it until I find a faster, cleaner, or safer way to
-          do the same thing again. Currently leading applied research at Nuvai AI.
+          I design research infrastructure, build experimentation tooling, and optimize
+          machine learning systems to make model training and inference faster and more reliable.
+          Currently working on applied research at Nuvai AI, with a background in full-stack
+          development and security engineering.
         </p>
 
         <div className="hero-links flex gap-3 mb-10">

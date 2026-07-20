@@ -3,21 +3,21 @@ import Nav from "@/components/ui/Nav";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Vikash V | Full Stack & Security Engineer",
+  title: "Vikash V | Applied Research Scientist — ML Infra & Systems",
   description:
-    "Vikash V — Full Stack Developer & Cybersecurity Engineer. Architecting scalable SaaS and securing digital infrastructures.",
+    "Vikash V — Applied Research Scientist specializing in ML Infrastructure and Systems optimization, with a background in full-stack development and security.",
   keywords: [
     "Vikash V",
-    "Full Stack Engineer",
-    "Cybersecurity",
-    "React",
-    "Next.js",
-    "Security Engineer",
+    "Applied Research Scientist",
+    "ML Infra",
+    "Systems Optimization",
+    "Full Stack",
+    "Security",
   ],
   openGraph: {
-    title: "Vikash V | Full Stack & Security Engineer",
+    title: "Vikash V | Applied Research Scientist — ML Infra & Systems",
     description:
-      "Architecting scalable SaaS & securing digital infrastructures.",
+      "ML Infrastructure and Systems optimization, full-stack, and security.",
     type: "website",
   },
 };

@@ -7,26 +7,26 @@ const PROJECTS = [
   {
     name: "Deployable Search Engine",
     tech: ["Flask", "OpenSearch", "Redis", "Docker"],
-    desc: "Production-grade web search engine using Flask microservices and OpenSearch. Distributed caching with Redis and Docker containerization for horizontal scalability. Custom ranking reduced query response time from 250 ms to 150 ms across 50k+ daily active users.",
-    metric: "150ms queries",
+    desc: "Production-grade web search engine using Flask microservices and OpenSearch. Features distributed caching with Redis and Docker containerization for horizontal scalability, achieving a query response time of 150ms.",
+    metric: "2024",
   },
   {
     name: "React Native IoT Monitor",
     tech: ["React Native", "Firebase", "WebSocket", "TensorFlow"],
-    desc: "Real-time IoT monitoring at 99.9% uptime across 1,000+ concurrent sensor connections. ML anomaly detection prevented 95% of potential equipment failures; WebSocket + Redux cut data latency by 60%.",
-    metric: "99.9% uptime",
+    desc: "Real-time IoT monitoring dashboard for tracking concurrent sensor connections. Uses WebSockets for live streams, Redux for state management, and TensorFlow for anomaly detection across 1,000+ devices.",
+    metric: "Personal Project",
   },
   {
     name: "Autonomous Self-Driving Vehicle",
     tech: ["Python", "TensorFlow", "Arduino", "OpenCV"],
-    desc: "Behaviour-cloning CNN trained on 20,000+ hours of simulated driving. Arduino-controlled hardware with a 40 ms control loop. Computer vision for lane detection, obstacle avoidance, and traffic-sign recognition.",
-    metric: "40ms loop",
+    desc: "Scale autonomous vehicle utilizing a behavioral cloning CNN. Controlled by an Arduino-based hardware platform running a 40ms control loop, with OpenCV for lane detection and obstacle avoidance.",
+    metric: "Coursework",
   },
   {
     name: "Web3 Freelancing Platform",
     tech: ["Solidity", "Ethereum", "React", "MetaMask"],
-    desc: "Decentralised freelancer marketplace on Ethereum. Escrow smart contracts with milestone payments and dispute resolution \u2014 no intermediaries, cross-border by default.",
-    metric: "On-chain",
+    desc: "Decentralized freelancer marketplace on Ethereum. Implements Solidity escrow smart contracts to automate milestone-based payments and dispute resolution without intermediaries.",
+    metric: "Personal Project",
   },
 ];
 
