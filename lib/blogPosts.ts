@@ -219,5 +219,119 @@ export const LOCAL_POSTS: BlogPost[] = [
 <p>The curiosity that refused to leave you alone.</p>
 <p>Those things don't fit into bullet points.</p>
 <p>Maybe they were never supposed to.</p>`
+  },
+  {
+    slug: "museum-of-failures",
+    title: "Museum of Failures — The Graveyard of Trying",
+    date: "2026-07-21",
+    tags: ["Personal"],
+    summary: "Every developer has an archive of abandoned repositories and half-finished ideas. A reflection on the optimism of starting, the quiet death of projects, and why unfinished work isn't clutter — it's evidence of curiosity.",
+    readTime: "4 min read",
+    coverImage: null,
+    content: `<p>Every developer has one.</p>
+<p>Some call it <code>archive</code>.</p>
+<p>Some call it <code>old_projects</code>.</p>
+<p>Some don't bother naming it at all.</p>
+<p>It's just a place where ideas go to die.</p>
+<p>Mine isn't particularly organized.</p>
+<p>It's full of projects that almost worked.</p>
+<p>Projects that definitely didn't.</p>
+<p>Ideas that made perfect sense at two in the morning and absolutely none the next afternoon.</p>
+<p>Sometimes I open those folders.</p>
+<p>Not because I want to revive them.</p>
+<p>Just to remember who I was when I started.</p>
+<hr class="my-8 border-border" />
+<p>There's a strange kind of optimism required to begin something new.</p>
+<p>When you create a fresh repository, every outcome still exists.</p>
+<p>Maybe this becomes a startup.</p>
+<p>Maybe it becomes a research paper.</p>
+<p>Maybe it becomes an open-source project people actually use.</p>
+<p>Maybe it changes your life.</p>
+<p>For a brief moment, every possibility is still alive.</p>
+<p>Then reality shows up.</p>
+<hr class="my-8 border-border" />
+<p>One project dies because someone else solved it better.</p>
+<p>Another because you underestimated how difficult it would be.</p>
+<p>One because life got busy.</p>
+<p>One because your interests changed halfway through.</p>
+<p>Another because, after two weeks of building it, you realized nobody actually needed it.</p>
+<p>None of those reasons feel dramatic.</p>
+<p>Most projects don't end with a catastrophic failure.</p>
+<p>They simply... stop.</p>
+<p>One commit becomes two weeks without opening the repository.</p>
+<p>Two weeks quietly become a year.</p>
+<hr class="my-8 border-border" />
+<p>For a long time, I hated looking at unfinished work.</p>
+<p>It felt like evidence that I lacked discipline.</p>
+<p>Now I see something else.</p>
+<p>I see curiosity.</p>
+<p>Every abandoned project is proof that I cared enough to begin.</p>
+<p>Some ideas deserved to fail.</p>
+<p>Some deserved a better version of me than the one who started them.</p>
+<p>Some existed only to teach me one lesson before disappearing.</p>
+<p>That's enough.</p>
+<hr class="my-8 border-border" />
+<p>I remember trying to read papers I couldn't understand.</p>
+<p>Building systems I had no business attempting.</p>
+<p>Training models that produced nothing but errors.</p>
+<p>Writing code that worked exactly once.</p>
+<p>Back then, it felt embarrassing.</p>
+<p>Now it's almost funny.</p>
+<p>Because every project I consider "successful" today exists only because dozens of invisible ones failed first.</p>
+<p>Nobody asks about those.</p>
+<p>They ask about the final result.</p>
+<hr class="my-8 border-border" />
+<p>Success has excellent public relations.</p>
+<p>Failure doesn't.</p>
+<p>People post screenshots when something launches.</p>
+<p>Nobody posts the week they spent debugging a problem that turned out to be a typo.</p>
+<p>Nobody announces they deleted five thousand lines of code because the entire design was wrong.</p>
+<p>Nobody celebrates realizing they should start over.</p>
+<p>Maybe we should.</p>
+<p>Those moments are expensive.</p>
+<p>They're also where most learning happens.</p>
+<hr class="my-8 border-border" />
+<p>I don't think failure is the right word anymore.</p>
+<p>Failure suggests something was supposed to succeed.</p>
+<p>Trying doesn't make that promise.</p>
+<p>Trying simply says,</p>
+<p><em>"This seemed worth exploring."</em></p>
+<p>Sometimes exploration leads somewhere.</p>
+<p>Sometimes it leads to a dead end.</p>
+<p>The dead ends matter too.</p>
+<p>They teach you where not to build next.</p>
+<hr class="my-8 border-border" />
+<p>Every now and then, I revisit an old project.</p>
+<p>Not to finish it.</p>
+<p>Just to read my own code.</p>
+<p>It's like opening a time capsule.</p>
+<p>You can almost hear the version of yourself who wrote it.</p>
+<p>You notice the shortcuts.</p>
+<p>The unnecessary complexity.</p>
+<p>The comments that confidently explain something you now know is completely wrong.</p>
+<p>It's oddly comforting.</p>
+<p>Growth is easier to measure backwards.</p>
+<hr class="my-8 border-border" />
+<p>Maybe that's why I don't delete those projects anymore.</p>
+<p>They aren't clutter.</p>
+<p>They're evidence.</p>
+<p>Evidence that I kept showing up.</p>
+<p>That I kept being curious.</p>
+<p>That I was willing to look foolish in private so I could become a little better in public.</p>
+<p>Not every repository deserved a release.</p>
+<p>Not every experiment deserved a paper.</p>
+<p>Not every idea deserved a second attempt.</p>
+<p>But every one of them deserved to exist.</p>
+<p>Because without them, I wouldn't have become the person capable of building the things that did survive.</p>
+<hr class="my-8 border-border" />
+<p>I still start too many projects.</p>
+<p>I still underestimate how hard they'll be.</p>
+<p>I still convince myself,</p>
+<p><em>"This one will only take a weekend."</em></p>
+<p>It never does.</p>
+<p>And honestly...</p>
+<p>I hope I never stop.</p>
+<p>Because one day, when I look back at my own little museum of failures, I don't want to remember everything I finished.</p>
+<p>I want to remember that I never stopped trying.</p>`
   }
 ];

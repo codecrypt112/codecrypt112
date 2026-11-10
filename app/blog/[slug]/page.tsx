@@ -25,7 +25,21 @@ const ALL_SLUGS_QUERY = `*[_type == "blogPost" && defined(slug.current)].slug.cu
 
 async function getPost(slug: string): Promise<PostData | null> {
   if (slug === "test-blog") return null;
-  // 1. Try fetching from Sanity
+
+  // 1. Try looking in local database first
+  const local = LOCAL_POSTS.find((p) => p.slug === slug);
+  if (local) {
+    return {
+      title: local.title,
+      date: local.date,
+      tags: local.tags,
+      bodyRaw: null,
+      content: local.content,
+      coverImage: local.coverImage || null,
+    };
+  }
+
+  // 2. Try fetching from Sanity
   try {
     const post = await sanityClient.fetch<{
       title: string;
@@ -54,19 +68,6 @@ async function getPost(slug: string): Promise<PostData | null> {
     }
   } catch {
     // Fail silently
-  }
-
-  // 2. Try looking in local database
-  const local = LOCAL_POSTS.find((p) => p.slug === slug);
-  if (local) {
-    return {
-      title: local.title,
-      date: local.date,
-      tags: local.tags,
-      bodyRaw: null,
-      content: local.content,
-      coverImage: local.coverImage || null,
-    };
   }
 
   return null;

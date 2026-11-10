@@ -104,6 +104,41 @@ function getCardPlaceholder(slug: string) {
       </div>
     );
   }
+  if (slug === "museum-of-failures") {
+    return (
+      <div className="relative w-full h-full min-h-[140px] flex items-center justify-center overflow-hidden">
+        {/* Subtle dot matrix background */}
+        <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:12px_12px]" />
+        <svg width="100%" height="100%" viewBox="0 0 100 60" className="w-full h-full max-w-[140px] opacity-40 group-hover:opacity-60 transition-opacity duration-300">
+          {/* Main trunk */}
+          <line x1="15" y1="30" x2="45" y2="30" stroke="#10b981" strokeWidth="0.8" />
+          <circle cx="15" cy="30" r="1.5" fill="#10b981" />
+          
+          {/* Branch 1 - aborted idea (upper) */}
+          <path d="M 30 30 Q 38 18 55 18" fill="none" stroke="#10b981" strokeWidth="0.5" strokeDasharray="2 2" />
+          <line x1="53" y1="16" x2="57" y2="20" stroke="#10b981" strokeWidth="0.8" />
+          <line x1="57" y1="16" x2="53" y2="20" stroke="#10b981" strokeWidth="0.8" />
+          <circle cx="30" cy="30" r="1.5" fill="#10b981" />
+
+          {/* Trunk continuation */}
+          <line x1="45" y1="30" x2="68" y2="30" stroke="#10b981" strokeWidth="0.8" />
+          <circle cx="45" cy="30" r="1.5" fill="#10b981" />
+
+          {/* Branch 2 - aborted idea (lower) */}
+          <path d="M 45 30 Q 53 42 70 42" fill="none" stroke="#10b981" strokeWidth="0.5" strokeDasharray="2 2" />
+          <line x1="68" y1="40" x2="72" y2="44" stroke="#10b981" strokeWidth="0.8" />
+          <line x1="72" y1="40" x2="68" y2="44" stroke="#10b981" strokeWidth="0.8" />
+
+          {/* Branch 3 - dead end at trunk */}
+          <line x1="68" y1="30" x2="85" y2="30" stroke="#10b981" strokeWidth="0.5" strokeDasharray="1.5 1.5" />
+          <line x1="83" y1="28" x2="87" y2="32" stroke="#10b981" strokeWidth="0.8" />
+          <line x1="87" y1="28" x2="83" y2="32" stroke="#10b981" strokeWidth="0.8" />
+
+          <text x="50" y="55" textAnchor="middle" fill="#888" fontSize="4" fontFamily="monospace">graveyard_of_trying.git</text>
+        </svg>
+      </div>
+    );
+  }
   // Default abstract visual representation
   return (
     <div className="relative w-full h-full min-h-[140px] flex items-center justify-center overflow-hidden">
