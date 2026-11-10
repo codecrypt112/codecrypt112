@@ -333,5 +333,120 @@ export const LOCAL_POSTS: BlogPost[] = [
 <p>I hope I never stop.</p>
 <p>Because one day, when I look back at my own little museum of failures, I don't want to remember everything I finished.</p>
 <p>I want to remember that I never stopped trying.</p>`
+  },
+  {
+    slug: "having-no-choice-but-to-do-it",
+    title: "Having No Choice But to Do It",
+    date: "2026-11-11",
+    tags: ["Personal"],
+    summary: "The difference between wanting to do something and feeling like you have to. A reflection on relentless work, guilt around rest, and the thing that gets you to open the laptop again tomorrow.",
+    readTime: "4 min read",
+    coverImage: null,
+    content: `<p>Sometimes I wonder what would happen if I just stopped.</p>
+<p>Not quit everything. Not disappear. Just stopped for a while.</p>
+<p>No deadlines. No research papers waiting to be read. No production issues. No startup ideas. No half-finished experiments sitting somewhere, waiting for me to return.</p>
+<p>Just a few days of doing absolutely nothing.</p>
+<p>I wonder how that would feel.</p>
+<p>And then reality kicks in.</p>
+<p>There are things waiting. People depending on me. Things I've started that I can't simply walk away from. Responsibilities that don't disappear just because I'm tired.</p>
+<p>So I get back to work.</p>
+<p>Not because I'm always motivated. Not because I wake up every morning excited to do all of this.</p>
+<p>Sometimes, I simply don't feel like I have another option.</p>
+<hr class="my-8 border-border" />
+<p>I don't think people understand the difference between <em>wanting to do something</em> and <em>feeling like you have to do it.</em></p>
+<p>They look similar from the outside.</p>
+<p>You see someone working late, building products, studying, doing research, taking up new challenges. It looks like ambition. Maybe it is.</p>
+<p>But there's another side to it.</p>
+<p>Sometimes you're working because you know what happens if you don't.</p>
+<p>Sometimes you're learning something new because you can't afford to remain where you are.</p>
+<p>Sometimes you're taking up another responsibility because the opportunity might not come again.</p>
+<p>And sometimes you keep going because you've already come too far to imagine what stopping would look like.</p>
+<p>It's a strange place to be.</p>
+<p>You aren't exactly unhappy with what you're doing.</p>
+<p>But you aren't entirely free from it either.</p>
+<hr class="my-8 border-border" />
+<p>There have been days when I wanted to close my laptop and walk away.</p>
+<p>Days when a research problem refused to make sense, a project wasn't moving, and everything I had planned for the day remained unfinished.</p>
+<p>You look at the clock.</p>
+<p>Another day gone.</p>
+<p>And somehow, you feel guilty for being tired.</p>
+<p>That's probably the part I struggle with the most.</p>
+<p>Rest feels like something I need to earn.</p>
+<p>I finish one task, and another appears. I solve one problem, and three more show up. Even when nothing is urgent, there's always something I could be doing.</p>
+<p>There's always another paper.</p>
+<p>Another concept.</p>
+<p>Another feature.</p>
+<p>Another opportunity I might be missing.</p>
+<p>I don't know when I started treating every quiet moment as something that needed to be filled.</p>
+<hr class="my-8 border-border" />
+<p>Maybe some of it comes from where I started.</p>
+<p>When you don't have everything figured out, opportunities feel different.</p>
+<p>You don't casually turn them down.</p>
+<p>You don't always get to choose the perfect project, the perfect timing, or the perfect circumstances.</p>
+<p>You learn what you can.</p>
+<p>You take what comes your way.</p>
+<p>You figure things out as you go.</p>
+<p>And somewhere in that process, you become the person people expect to figure things out.</p>
+<p>The person who can take a difficult problem and somehow make progress.</p>
+<p>The person who says, "I'll try."</p>
+<p>I like being that person.</p>
+<p>But sometimes I wish people understood that figuring things out doesn't mean I always know what I'm doing.</p>
+<p>Sometimes I'm just as lost as everyone else.</p>
+<p>I just don't have the luxury of staying lost for too long.</p>
+<hr class="my-8 border-border" />
+<p>There's a particular kind of loneliness in doing things nobody around you fully understands.</p>
+<p>You can explain your job.</p>
+<p>You can explain your startup.</p>
+<p>You can tell someone you're working on a research problem.</p>
+<p>But explaining why you're doing all of them at once is harder.</p>
+<p>People ask why you don't slow down.</p>
+<p>Some ask why you take on so much.</p>
+<p>Others tell you that you're young and should enjoy life.</p>
+<p>They're probably right.</p>
+<p>I know there are things I'm missing.</p>
+<p>Conversations I should have stayed longer for. Friends I should have called back. Evenings that could have been spent doing absolutely nothing.</p>
+<p>I notice these things.</p>
+<p>It's not that I don't care.</p>
+<p>Sometimes I care so much that I don't know what to put down first.</p>
+<hr class="my-8 border-border" />
+<p>I wish I could say there's some beautiful philosophy behind all of this.</p>
+<p>That I have a clear vision, a perfect plan, and an unshakable belief in where I'm going.</p>
+<p>I don't.</p>
+<p>There are days when I question almost everything.</p>
+<p>Whether I'm moving fast enough.</p>
+<p>Whether I'm learning the right things.</p>
+<p>Whether all these efforts will eventually lead somewhere.</p>
+<p>Whether I'm building something meaningful or just keeping myself occupied.</p>
+<p>I don't always have answers.</p>
+<p>But the next morning comes anyway.</p>
+<p>There's work to do.</p>
+<p>And I get up.</p>
+<hr class="my-8 border-border" />
+<p>Maybe that's what this is really about.</p>
+<p>Not being endlessly motivated.</p>
+<p>Not being exceptionally disciplined.</p>
+<p>Not even being ambitious all the time.</p>
+<p>It's about having something inside you that refuses to let you walk away.</p>
+<p>Maybe it's curiosity.</p>
+<p>Maybe it's responsibility.</p>
+<p>Maybe it's the fear of going back to a place you've spent years trying to move beyond.</p>
+<p>Maybe it's the hope that all these seemingly disconnected efforts will eventually make sense.</p>
+<p>I honestly don't know.</p>
+<p>Perhaps it's a little bit of everything.</p>
+<hr class="my-8 border-border" />
+<p>I still want to build things.</p>
+<p>I still want to understand difficult problems, work on ideas that seem a little too ambitious, and see what I'm capable of.</p>
+<p>I don't want to lose that part of myself.</p>
+<p>But I'm beginning to understand that wanting a life and being consumed by the pursuit of it are two different things.</p>
+<p>I haven't figured out where that line is.</p>
+<p>I'm still trying.</p>
+<p>And tomorrow, I'll probably open my laptop again.</p>
+<p>Not because I have everything figured out.</p>
+<p>Not because I'm ready.</p>
+<p>But because there are things I still want to do, things I need to do, and a future I'm not quite ready to give up on.</p>
+<p>Sometimes, that's all the reason you have.</p>
+<p>And sometimes, that's enough.</p>
+<hr class="my-8 border-border" />
+<p><em>Some things we do because we love them. Some because we have to. And sometimes, after doing them long enough, we can no longer tell the difference.</em></p>`
   }
 ];
